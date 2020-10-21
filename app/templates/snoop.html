@@ -1,0 +1,24 @@
+{%extends "base.html" %}
+
+{%block content %}
+	<div class="line">
+		<p class="text">кокерпу</p>
+		<div class="img" style="background-image: url({{ url_for('static', filename='kokapu.jpg') }} )"></div>
+		
+	</div>
+	<div class="line">
+		<p class="text">той пудель</p>
+		<div class="img" style="background-image : url({{ url_for('static', filename='toy.jpg') }}) "></div>
+		<video controls src="{{ url_for('static', filename='toy.mp4')}}"></video>
+	</div>
+	<div class="line">
+		<p class="text">ротвейлер</p>
+		<div class="img" style="background-image : url({{ url_for('static', filename='rottweiler.jpg') }})"></div>
+		<video controls src="{{ url_for('static', filename='rottweiler.mp4')}}"></video>
+	</div>
+	<div class="line">
+		<p class="text">пшеничный терьер</p>
+		<div class="img" style="background: url({{ url_for('static', filename='terier.jpg') }})"></div>
+		<video controls src="{{ url_for('static', filename='terier.mp4')}}"></video>
+	</div>
+{%endblock content %}
